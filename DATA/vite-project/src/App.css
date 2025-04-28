@@ -1,0 +1,490 @@
+/* Container for all product cards */
+.card-container {
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  /* Individual product card */
+  .post-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Product image */
+  .post-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  /* Title, price, category, description */
+  .post-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-price {
+    color: #2ecc71;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-category {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-description {
+    font-size: 0.85rem;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .post-card button {
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0.3rem 0 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+  
+  .post-card button:first-of-type {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .post-card button:first-of-type:hover {
+    background-color: #2980b9;
+  }
+  
+  .edit-button {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #c0392b;
+  }
+  
+
+
+  /* addproduct */
+  /* Container styling */
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 2rem;
+  }
+  
+  /* Inputs and Select */
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .button {
+    background-color: #3498db;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
+
+  /* editdata */
+  /* Form container */
+form {
+    max-width: 450px;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  form h1 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Input fields */
+  form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+  }
+  
+  form input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Submit button */
+  form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  form button:hover {
+    background-color: #27ae60;
+  }
+  
+
+  /* navbar */
+  /* Navbar container */
+nav {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for nav items */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual nav item */
+nav li {
+  margin: 0 1rem;
+}
+
+/* Link styling */
+nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+
+.buttonStyle {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.filter-search input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: border-color 0.3s;
+}
+
+.filter-search input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons container */
+.filter-buttons {
+  display: flex;
+  
+}
+
+/* Button style */
+.filter-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 48%;
+  margin-top: 20px;
+}
+
+.filter-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Button disabled state */
+.filter-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* productdetails */
+.product-details {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.product-details h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-details img {
+  width: 250px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.product-details p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.product-details strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* project */
+.project-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.project-container h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.project-container img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.project-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.project-container strong {
+  color: #111;
+  font-weight: bold;
+}
+
+/* pegination */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.pagination-controls button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  padding: 1rem 2rem;
+}
+
+.navbar-logo .logo-text {
+  color: #61dafb;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.navbar-links li a:hover {
+  color: #61dafb;
+}
+
+
+/* footer */
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #61dafb;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-section li:hover {
+  color: #61dafb;
+}
+
+.footer-icons img {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+}
