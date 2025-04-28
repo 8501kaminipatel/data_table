@@ -27,8 +27,8 @@ This React project is set up with Vite for fast development. It includes basic s
 To get started, clone the repository and install the necessary dependencies.
 
 1. **Clone the repository:**
-
-   ```bash
 cd vite-project
 npm install
 npm run dev
+   ```bash
+
